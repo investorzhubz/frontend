@@ -90,7 +90,7 @@ function App() {
           <Route path='/market-place' element={<MarketPlace/>}/>
           <Route path='/create-product' element={user ? <CreateProduct/>:<Navigate to='/login'/>}/>
           <Route path='/about' element={<AboutUS/>}/>
-          <Route path='/how-it-works' element={<HowItWorks/>} />
+          <Route path='/reward-program' element={<HowItWorks/>} />
           <Route path='/plans' element={<Plan/>}/>
           <Route path='/forgot-password' element={<ForgotPassword/>}/>
           <Route path='/reset-pass' element={<ResetPassword/>}/>
