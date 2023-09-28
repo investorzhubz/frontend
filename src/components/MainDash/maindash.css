@@ -36,7 +36,7 @@
 .caution{
   display: flex;
   margin: 0.2rem 0.3rem;
-  align-items: center;
+ 
   justify-content: center;
 }
 .caution p{
@@ -132,7 +132,10 @@ button{
     padding-bottom: 2rem;
   }
   .caution span{
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .caution p{
+    font-size: 12px;
   }
 
 }
