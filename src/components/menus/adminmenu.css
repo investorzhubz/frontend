@@ -21,6 +21,7 @@
     background-color: #0000001e;
     overflow-y: auto;
     z-index:1000;
+    padding-bottom: 1rem;
 }
 
 .aditem{
