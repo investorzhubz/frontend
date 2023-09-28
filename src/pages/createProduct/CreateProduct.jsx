@@ -45,7 +45,7 @@ function CreateProduct() {
     formData.append('price',price)
     formData.append('description',description)
 
-    axios.post('https://afm-bot.onrender.com/api/affiliate/products',formData,{
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/products`,formData,{
       headers:{
         "Content-Type":'multipart/form-data',
         Authorization:`Bearer ${user.token} `
