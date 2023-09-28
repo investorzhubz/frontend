@@ -40,7 +40,7 @@ function SendVerify() {
  const [success,setSucces]=useState(null)
  const [number, setNumber]=useState(0)
     const handleClick=()=>{
-       axios.get('https://afm-bot.onrender.com/api/affiliate/sendverify/',{
+       axios.get(`${process.env.REACT_APP_BACKEND_URL}/sendverify/`,{
         headers:{
             Authorization:`Bearer ${user.token}`
         }
@@ -48,6 +48,8 @@ function SendVerify() {
         setSucces('A fresh Verification Link has been sent to your email')
         setNumber(number+1)
 
+       }).catch(error=>{
+        console.log(error)
        })
     }
   return (
