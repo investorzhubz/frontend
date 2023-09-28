@@ -1,0 +1,79 @@
+.landing {
+    width: 100%; /* Set the width to 100% to make it full-width on mobile */
+    height: auto; /* Allow the height to adjust to the content */
+    overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+        background: linear-gradient(#5a0b4d7e, #5A0B4D), url('../../resources/images/ibg2.jpg');
+ background-repeat: repeat;
+        
+        border-bottom-left-radius: 50% 50px;
+        border-bottom-right-radius: 50% 50px;
+     height: 100vh;
+         font-family: DM Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+.landing .landingnav{
+    position: absolute;
+    top: 0;
+}
+
+.plans{
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.homeplansection{
+    color: #fff;
+    background-position:calc(40%+20px) calc(25%+30px);
+    background-size: contain;
+    
+    padding: 2rem 0;
+}
+.homeplansection h1{
+    text-align: center;
+    padding: 2rem;
+    color: #000000;
+    font-weight: 800;
+    font-size: 40px;
+
+}
+.homeplansection button{
+    background-color:var(--globalcolor);
+    border: none;
+    color: #fff;
+    font-weight: 650 !important;
+    border-radius: 10px;
+    padding: 1.3rem 3rem ;
+    margin-right: 2rem;
+    font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+}
+.testimonial{
+   background:var(--globalcolor);
+
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 0;
+}
+.testimonial h1{
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+    margin:1rem 0 ;
+}
+.testimonial p{
+    color: #fff;
+}
+@media(max-width:768px){
+    .landing{
+       
+    }
+}

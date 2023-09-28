@@ -1,0 +1,7 @@
+.depositTable{
+    position: relative;
+    overflow: hidden;
+}
+.depositTable .navbar{
+    background: var(--globalcolor);
+}

@@ -1,0 +1,165 @@
+import React, { useState, useEffect } from "react";
+import './clock.css'
+import { useAuthContext } from "../../hooks/useAuthContext";
+import axios from 'axios'
+import Alert from '../alerts/Alert'
+const Clock = ({ startTime }) => {
+  const [currentTime, setCurrentTime] = useState(startTime);
+  const [timerStopped, setTimerStopped] = useState(false);
+  const [error,setError]=useState(false);
+  const [msg,setMsg]=useState();
+  const {user} =useAuthContext()
+  const [show,setShow]=useState(false)
+
+  const handlePlan=()=>{
+    setMsg(false)
+    setError(false)
+    setShow(true)
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/reward/`,{
+      headers:{
+        Authorization:`Bearer ${user.token}`
+      }
+    }).then(response=>{
+      
+       setMsg(response.data.msg)
+       
+    }).catch(error=>{
+      setError(true)
+      
+      setError(error.response.data.error)
+      
+    })
+        
+
+
+
+
+  }
+  const handleActivate=()=>{
+    setMsg(false)
+    setError(false)
+    
+    
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/activate`,{
+      headers:{
+        Authorization:`Bearer ${user.token}`
+      }
+    }).then(response=>{
+      setShow(false)
+      setTimerStopped(false)
+      
+      setMsg(response.data.msg)
+      
+   }).catch(error=>{
+     setError(true)
+     
+     setError(error.response.data.error)
+     
+   })
+  }
+  useEffect(() => {
+    // Calculate the end time by adding 24 hours to the start time
+    const endTime = new Date(startTime);
+    endTime.setHours(endTime.getHours() + 24);
+   
+    const timerId = setInterval(() => {
+      // Get the current time
+      const now = new Date();
+
+      // Check if the current time is within the 24-hour window
+      if (now < endTime) {
+        setCurrentTime(now);
+      } else {
+        // If the 24-hour window has elapsed, stop the timer and set timerStopped to true
+        clearInterval(timerId);
+        setTimerStopped(true);
+      }
+
+      
+    }, 1000);
+
+    // Cleanup function to clear the interval when the component unmounts
+    return () => {
+      clearInterval(timerId);
+    };
+  }, [startTime,timerStopped]);
+
+  return (
+    
+    <div className="clockworks">
+      {error &&( <div>
+        <Alert type="error">
+        <p>{error}</p>
+
+        </Alert>
+      </div>)}
+      {msg &&( <div>
+        <Alert type="success">
+        <p>{msg}</p>
+
+        </Alert>
+      </div>)}
+        <div className="clock">
+        
+      <div
+        className="hour_hand"
+        style={{
+          transform: `rotateZ(${currentTime.getHours() * 30}deg)`,
+        }}
+      />
+      <div
+        className="min_hand"
+        style={{
+          transform: `rotateZ(${currentTime.getMinutes() * 6}deg)`,
+        }}
+      />
+      <div
+        className="sec_hand"
+        style={{
+          transform: `rotateZ(${currentTime.getSeconds() * 6}deg)`,
+        }}
+      />
+      <span className="twelve">12</span>
+      <span className="one">1</span>
+      <span className="two">2</span>
+      <span className="three">3</span>
+      <span className="four">4</span>
+      <span className="five">5</span>
+      <span className="six">6</span>
+      <span className="seven">7</span>
+      <span className="eight">8</span>
+      <span className="nine">9</span>
+      <span className="ten">10</span>
+      <span className="eleven">11</span>
+      
+      {/* Render the button conditionally based on the timerStopped state */}
+    
+    </div>
+    <div className="bot-buttons">
+    {timerStopped ? (
+        <div >
+          <h4 >Bot Sales Processed Successfully.</h4>
+          {!show&& <button onClick={handlePlan}>
+          Claim Reward
+        </button>}
+        <div>
+          {show &&(
+            <button onClick={handleActivate}>
+            Activate Bot
+          </button>
+          )}
+        </div>
+        
+        </div>
+      ): (
+        <div >
+          <h4 style={{color:'pink'}}>Bot Processing Sales...</h4>
+        
+        </div>
+      )}
+    </div>
+    </div>
+  );
+};
+
+export default Clock;

@@ -1,0 +1,236 @@
+/* .cardblock{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 2rem;
+  justify-content: center;
+  
+}
+.card {
+  width: 100%;
+  padding: 0 1rem;
+ color:#fff;
+  height: 150px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+.title{
+  z-index: 1;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.balance{
+  z-index:999 ;
+  color:#fff;
+  margin-top: 1rem;
+}
+.balance h4{
+  z-index: 999;
+  color: white;
+  font-size: 2em;
+ 
+}
+.title button{
+  margin-left: 1rem;
+}
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+} */
+
+/* @keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+
+} 
+
+@media screen and (max-width: 1200px) {
+  .cardblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+  }
+  .card {
+    width: 95%;
+   color:#fff;
+    height: 154px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+   
+   
+  }
+  .balance{
+    z-index:1 ;
+    color:#fff;
+    margin-top: 1rem;
+  }
+  .balance h4{
+    z-index: 999;
+    color: white;
+    font-size: 2em;
+   
+  }
+  .title button{
+   
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+  }
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  .cardblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+  }
+  .card {
+    width: 90%;
+    padding-top: 1rem;
+   color:#fff;
+    height: 150px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 5rem;
+  align-items: center;
+   
+  }
+  .balance{
+    z-index:1 ;
+    color:#fff;
+    margin-top: 1rem;
+  }
+  .balance h4{
+    z-index: 999;
+    color: white;
+    font-size: 2em;
+   
+  }
+  .title button{
+   
+    font-size: 16px;
+    padding: 5px 10px;
+    
+  }
+  .card .title h2 {
+    z-index: 1;
+    color: white;
+    font-size: 18px
+  }
+  
+ 
+     
+  }
+  */
+
+  .cardblock{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    
+    border: 1px solid rgb(212, 212, 212);
+  }
+  .card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 2rem;
+    border-left: 1px solid rgb(212, 212, 212) !important;
+  }
+  .card button{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background: var(--globalcolor);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    
+  }
+  .card h2{
+    font-family: 15px !important;
+  }
+  @media (max-width:767px){
+    .cardblock{
+      flex-direction: column;
+      margin: 1rem 1rem;
+    }
+    .card{
+      padding: 1rem 2rem;
+      border-bottom: 1px solid rgb(212, 212, 212) !important;
+      margin-top: 1rem;
+    }
+    .card h2{
+      font-size: 19px;
+    }
+   
+  }

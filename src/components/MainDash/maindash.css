@@ -1,0 +1,135 @@
+.plansection{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #F8F0F6;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.overalldasboard{
+  width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 2rem;
+}
+.plansection p{
+  font-weight: 600;
+}
+.plansection button{
+  padding: 0.7rem 4rem;
+  font-weight: 700;
+  background-color: var(--globalcolor);
+  color: #fff;
+ border-radius: 5px;
+ border: none;
+}
+.userdashboard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:2rem 3rem
+
+}
+.caution{
+  display: flex;
+  margin: 0.2rem 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+.caution p{
+  color: red;
+}
+button{
+  cursor: pointer !important;
+}
+.userdashboardp{
+  font-size: 25px !important;
+}
+.userdashboard button{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  background-color: var(--globalcolor);
+  color: #fff;
+ border-radius: 5px;
+ border: none;
+
+}
+.userdashboard p{
+  font-size: 15px;
+  padding-left: 1rem;
+}
+.refferal{
+  background-color: var(--globalcolor);
+  padding: 2rem 0;
+  margin: 0 15rem;
+  border-radius: 10px;
+  color: #fff;
+
+}
+.refferal h2{
+  margin-bottom: 1rem;
+
+}
+.refferal button{
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  color: var(--globalcolor);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .plansection{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: start;
+
+  }
+  .plansection button{
+    padding: 0.6rem 2rem;
+    overflow: hidden;
+  white-space: nowrap; 
+  
+  }
+  .userdashboard{
+    padding-left: 0.7rem;
+    padding-right: 0.5rem;
+    
+  }
+  .userdashboard button{
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+
+  }
+  .userdashboardp{
+    font-size: 15px !important;
+
+  }
+  
+  .refferal{
+    margin:0 1rem;
+   
+  }
+  .refferal h2{
+    font-size: 20px;
+  }
+  .refferal p{
+    font-size: 15px;
+  }
+  .card-render{
+    padding-bottom: 2rem;
+  }
+
+}

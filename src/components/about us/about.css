@@ -1,0 +1,211 @@
+.about{
+   margin-top: -6rem;
+   background-color: white;
+   margin-left: 5rem;
+   margin-right: 5rem;
+
+}
+.about .about-img img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.about .about-text h1{
+    padding-top: 1rem;
+   font-size: 60px;
+   font-weight: 800;
+   text-align: center;
+   margin-bottom: 2rem;
+
+
+}
+.about-bttext{
+    text-align: start;
+
+}
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+
+  
+  }
+  .overallaboutus .navbar{
+    align-items: center !important;
+    background-color: var(--globalcolor);
+  }
+  .aboutus img{
+    margin-bottom: 2rem;
+  }
+  .aboutus .navbar{
+    background: var(--globalcolor);
+  }
+  .howitworks .navbar{
+    background-color: var(--globalcolor);
+  }
+.about .about-text{
+    margin: 0 3rem;
+}
+.about .about-text p{
+    line-height: 30px;
+    text-align: justify;
+
+}
+.about .about-text button{
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+}
+.tools{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin-top: 1rem;
+    
+}
+.tool-section{
+    margin-top: 2rem;
+}
+.how{
+    display: flex;
+    background-color: #fdfdfd15;
+   /* margin: 1rem 4rem; */
+   padding-bottom: 3rem;
+ 
+  
+
+
+}
+
+.reward .gpt3__whatgpt3-container h1{
+    color: #000;
+
+}
+.reward .gpt3__whatgpt3-container p{
+    color: #000;
+
+}
+.how img{
+    width: 500px;
+    height: 500px;
+    margin: 1rem 0;
+}
+.how h1{
+    padding-top: 1rem;
+   font-size: 40px;
+   font-weight: 800;
+   text-align: center;
+   margin-bottom: 2rem;
+   color: rgb(0, 0, 0);
+
+}
+ .how p{
+    line-height: 20px;
+    text-align: justify;
+    padding:0 2rem;
+    color:#222222;
+    line-height: 25px;
+
+ }
+
+.tool-section{
+    padding: 2rem;
+    background-color: #fff;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    line-height: 25px;
+    color: #161616;
+    font-family: "DM sans";
+}
+.tool-section h4{
+    margin: 12px 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.about-text button{
+    background-color:var(--globalcolor);
+    border: none;
+    color:#fff ;
+    font-weight: 650 !important;
+    border-radius: 10px;
+    padding: 1.5rem 3rem ;
+    margin-right: 2rem;
+    font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+    .about{
+        flex-direction: column;
+       
+        align-items: center;
+    }
+    .about-img{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        
+    }
+    .tools{
+        display: flex;
+        padding: 0;
+        margin: 2rem 1rem;
+    
+    }
+    .tool-section{
+        padding: 1rem;
+    }
+  
+}
+
+ @media screen and (max-width: 768px) {
+    .about{
+        margin-top: -7rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .about .about-img img{
+        height: 300px;
+        width: 300px;
+    }
+    .about .about-text h1{
+        font-size: 30px;
+    }
+     .about .about-text p{
+        line-height: 25px;
+        font-size: 16px;
+     }
+     .about .about-text button{
+        padding: 0.9rem 0.9rem;
+        font-size: 13px;
+     }
+     .tools{
+        flex-direction: column;
+        padding: 1rem;
+
+     }
+     .tool-section h4{
+        font-size: 18px !important;
+     }
+     .tool-section p{
+        line-height: 25px;
+     }
+     .tool-section{
+        margin-top: 1rem;
+     }
+     .how{
+        flex-direction: column;
+     }
+     .how h1{
+        font-size: 30px;
+
+     }
+     .about .about-text{
+        margin: 0 0;
+     }
+     .tools{
+        padding: 0;
+     }
+  }
+ 

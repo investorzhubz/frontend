@@ -1,0 +1,10 @@
+.rows{
+    display: flex;
+}
+.marketPlace{
+    position: relative;
+  
+  }
+  .marketPlace .navbar{
+    background:var(--globalcolor);
+  }

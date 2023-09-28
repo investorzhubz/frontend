@@ -1,0 +1,34 @@
+.withdrawalbonus{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: start;
+    align-items: center;
+   
+    flex-direction: column;
+}
+.withdrawalbonus .navbar{
+    background-color: var(--globalcolor);
+}
+.withdrawalbonus h2{
+    margin-top: 2rem;
+    font-size: 40px;
+}
+.withdrawalbonus p{
+    font-size: 18px;
+    margin-top: 2rem;
+}
+.welcombonusbtn button{
+    padding: 1rem 3rem;
+    background-color: var(--globalcolor);
+    color: #fff;
+    margin-top: 2rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.alert{
+    margin-top: 0;
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+.pricing-plan .navbar{
+   background-color: var(--globalcolor);
+   font-weight: 900px;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   padding-left: 0;
+   padding-right: 5rem;
+
+}
+.hint{
+   color: black;
+}
+.hint h4{
+   font-size: 21px;
+   font-weight: 600;
+}
+.hint p{
+   text-decoration: dotted;
+   margin-top: 0.5rem;
+}
+.overallplanclass{
+   width: 100%;
+    overflow-x: hidden;
+
+}

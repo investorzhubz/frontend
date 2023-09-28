@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #fff !important;
+  }
+  .cf:before, .pricing-table:before,
+  .cf:after,
+  .pricing-table:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .cf:after, .pricing-table:after {
+    clear: both;
+  }
+  
+  .cf, .pricing-table {
+    zoom: 1;
+  }
+  
+
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: lighter;
+  }
+  
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+    
+   
+  }
+  .pricing-table{
+    margin: 2rem;
+
+  }
+  .plans{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    position: relative;
+   
+
+
+  }
+  
+  .pricing-table .plan {
+    
+    box-sizing: border-box;
+    width: 300px;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  .pricing-table .plan h3.name {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    color: #000000;
+    font-weight:800 ;
+  }
+  .pricing-table .plan h4.price {
+    font-size: 35px;
+    color: #fff;
+    padding: 30px;
+    background-color: #01A4F5;
+    line-height: 40px;
+  }
+  .pricing-table .plan h4.price span {
+    font-size: 16px;
+    font-style: italic;
+  }
+  .pricing-table .plan ul.details {
+    list-style-type: none;
+  }
+  .pricing-table .plan ul.details li {
+    border-bottom: 1px solid var(--globalcolor);
+    padding: 20px;
+    color: #000000;
+  }
+  .pricing-table .plan h5.order {
+    padding: 30px;
+    font-size: 17px;
+  }
+  .pricing-table .plan h5.order a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #01A4F5;
+    padding: 10px 20px;
+  }
+  .pricing-table .plan h4.price {
+    background-color:var(--globalcolor);
+  }
+  .pricing-table .plan:first-child h5.order a {
+    background-color: var(--globalcolor);
+  }
+ 
+ 
+  .pricing-table .plan:nth-child(2n) {
+    box-shadow: 0px 0px 10px #424242;
+    z-index: 100;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+  }
+
+  /* card style */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:2rem 1rem;
+    height: 100%;
+
+    
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  /* For Plans */
+
+  .amount{
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .amount p{
+    margin-left: 1rem;
+  }

@@ -1,0 +1,27 @@
+.comingsoon {
+    background-color: var(--globalcolor);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .comingsoon div {
+    background-color: #fff;
+    padding: 9rem 7rem;
+    width: 100%;
+    margin: 3rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .comingsoon p {
+    font-size: 30px;
+    font-weight: 700;
+    box-sizing: border-box;
+    white-space: nowrap; /* Prevent line breaks */
+   
+  }
+  

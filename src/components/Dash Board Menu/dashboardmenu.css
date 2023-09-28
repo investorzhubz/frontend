@@ -1,0 +1,126 @@
+.dasboardmenu{
+    background-color: var(--globalcolor);
+    overflow:hidden;
+    width:100%;
+}
+.usersidemenu{
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    z-index: 1000;
+}
+.dasboardmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dmlogo img{
+    width: 400px;
+}
+.dmprofile{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.dmprofiledetails{
+    position:absolute;
+    height:100px;
+    background:#ffe8f9;
+    display:flex;
+    align-items:start;
+    justify-content:start;
+    flex-direction:column;
+    width:200px;
+    margin-top: 1.7rem;
+    margin-left:2rem;
+    padding-left:1rem;
+
+
+}
+.dmprofiledetails p{
+    margin-top:1rem;
+}
+.dmprofiledetails div{
+    color:red;
+    margin-top:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+
+}
+.dmlogout{
+    cursor:pointer ;
+}
+.dmlogout span{
+margin-left:1rem
+}
+.dmmenu{
+    color:#fff;
+    margin-right:2rem;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+
+    @media (max-width:767px){
+        .dmlogo img{
+            width:180px
+        }
+        .dasboardmenu{
+            height:70px;
+        }
+        .dmmenu{
+            color:#fff;
+            margin-right:1rem;
+        }
+        .admenuuser p{
+            color:#000;
+        }
+
+    }
+    .slideInLeft {
+        -webkit-animation-name: slideInLeft;
+        animation-name: slideInLeft;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes slideInLeft {
+        0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+        }
+        @keyframes slideInLeft {
+        0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+        }

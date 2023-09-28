@@ -1,0 +1,140 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 4rem;
+    transition: all 300ms ease;
+    color: white;
+  }
+  .sidebar-menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  /* logo */
+  .bars{
+    display: none;
+  }
+  .username{
+    margin-top: 2rem;
+  }
+  .username p{
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .logo {
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 22px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+  }
+  .logo > span > span {
+    color: var(--pink);
+  }
+  
+  .logo > img {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  
+  /* menu */
+  .menu {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .menuItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 0.7rem;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .menuItem:hover {
+    cursor: pointer;
+  }
+  
+  .menu .menuItem:last-child {
+    position: absolute;
+    bottom: 0rem;
+    top:40rem;
+    width: 100%;
+  }
+  
+  .active {
+    background: #1EABEE;
+    margin-left: 0;
+  }
+  .active::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background: #9940FB;
+    margin-right: calc(1rem - 8px);
+  }
+  .lg{
+
+    top: 0%;
+  }
+  
+  
+  /* Tablets */
+  @media screen and (max-width: 1200px) {
+    .menuItem>span{
+      display: none;
+    }
+    .logo{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar{
+      position: fixed;
+      z-index: 9;
+      background: #020014;
+      width: 55%;
+      padding-right: 1rem;
+      height: 100%;
+    }
+    .menuItem>span{
+      display: block;
+      
+    }
+    .logo{
+      display: flex;
+    }
+    .menu .menuItem:last-child {
+      position: relative;
+      margin-top: 6rem;
+      bottom: 7rem;
+      top:auto
+    
+    }
+    .bars{
+      display: flex;
+      position: fixed;
+      top: 2rem;
+      left:60%;
+      background:#fdfafa;
+      padding:10px;
+      border-radius: 10px;
+      z-index: 9;
+    }
+    .close{
+      left: -60%;
+    }
+  }

@@ -1,0 +1,72 @@
+.overallprofile .navbar{
+    background-color: var(--globalcolor);
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin: 1rem 3rem;
+    padding: 2rem 3rem;
+    
+}
+.profile h3{
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.profiledetail{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-top: 1.5rem;
+    
+
+}
+.profiledetail p{
+    margin: 0.3rem 0.5rem;
+    font-size: 12px;
+}
+.profiledetail span{
+    background-color:#f5ebf3;
+    border-radius: 5px;
+    width: 90%;
+    text-align: start;
+    padding: 0.5rem 2rem;
+    font-size: 14px;
+   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+.checkmark {
+    font-size: 20px; /* Adjust the font size as needed */
+    line-height: 1; /* Ensure the checkmark is vertically centered */
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%; /* Make it a circle */
+    background-color: #ff3bd8;
+    padding: 1rem 2rem;
+  }
+  
+  .true {
+    
+    color: green; /* Green color for the checkmark */
+  }
+  
+  .false {
+    color: red; /* Red color for the checkmark */
+  }
+
+@media(max-width:768px){
+    .profile{
+        padding: 0;
+        padding-bottom: 2rem !important;
+        margin: 0.5rem 1rem;
+        
+    }
+}
