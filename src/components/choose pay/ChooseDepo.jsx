@@ -8,7 +8,7 @@ function ChooseDepo() {
     <h1>Choose a Payment Service</h1>
     
     <div class="payment-options">
-    <Link to='/buy-plan'>
+    <Link to='/buy-plan1'>
     <div class="payment-option" onclick="selectPayment('credit-card')">
         {/* <img src="credit-card.png" alt="Credit Card" /> */}
         <h2>Payemnt Option 1</h2>

@@ -131,7 +131,7 @@ function MainDash() {
        <div className="refferal">
          <h2>Refferal Link</h2>
         <p>{data &&(
-          <p id='copy'>{`https://fluffy-treacle-35eb99.netlify.app/signup?referral=${data.username}`}</p>
+          <p id='copy'>{`https://investorshubs.com/signup?referral=${data.username}`}</p>
         )}</p>
          <button onClick={handleCopy}>{copy}</button>
        </div>

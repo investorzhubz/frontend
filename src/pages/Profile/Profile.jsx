@@ -5,6 +5,7 @@ import Footer from '../../components/footer/Footer'
 import { useAuthContext } from '../../hooks/useAuthContext'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../components/loading/Loading'
 
 function Profile() {
     const {user}=useAuthContext()
@@ -33,7 +34,7 @@ function Profile() {
   return (
     <div className='overallprofile'>
        {
-        data&&(
+        data?(
             <>
              <Navbar />
         <div className="profile">
@@ -74,6 +75,8 @@ function Profile() {
         </div>
         <Footer/>
             </>
+        ):(
+          <Loading/>
         )
        }
     </div>
